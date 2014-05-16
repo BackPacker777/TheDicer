@@ -92,7 +92,7 @@ public class MainActivity extends Activity {
 		} else {
 			dieQty = Integer.parseInt(e1.getText().toString());
 		}
-		if (e1.getText().toString().matches("")) {
+		if (e2.getText().toString().matches("")) {
 			dieType = 0;
 		} else {
 			dieType = Integer.parseInt(e2.getText().toString());
