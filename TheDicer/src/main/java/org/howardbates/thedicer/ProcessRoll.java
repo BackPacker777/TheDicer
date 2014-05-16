@@ -13,7 +13,7 @@ public class ProcessRoll {
 		result = 0;
 		Random roll = new Random();
 		rolls = new int[dieQty];
-		if (dieType == 0) {
+		if (dieType == 0 || dieQty == 0) {
 			result = 0;
 		} else {
 			for (int i = 0; i < dieQty; i++) {
@@ -28,6 +28,7 @@ public class ProcessRoll {
 	public int getResult() {
 		return result;
 	}
+
 
 	public int[] getRolls() {
 		return rolls;
